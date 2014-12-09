@@ -62,14 +62,10 @@ def get_song_ids(feels_words):
 def index():
 	if request.method == 'GET':
 		return render_template('index.html')
-	else:
-		return redirect('/player')
-
-@app.route('/player', methods=['GET', 'POST'])
-def result():
-	user_feels = request.form['feels']
-	user_songs = ','.join(get_song_ids(user_feels))
-	return render_template('index.html', songids=user_songs)
+	elif request.method == 'POST': #what to do on refresh...
+		user_feels = request.form['feels']
+ 		user_songs = ','.join(get_song_ids(user_feels))
+ 		return render_template('index.html', songids=user_songs) 
 
 if __name__ == '__main__':
     app.run(debug=True)

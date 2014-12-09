@@ -1,17 +1,21 @@
+* {
+  font-family: 'Courier', serif;
+}
+
 body {
 	text-align: center;
 }
 
+#content {
+  margin: 30px;
+}
+
 #form {
-	padding: 30px;
+	margin: 30px;
 }
 
 #player {
-	margin: 0 auto;
-}
-
-#content {
-	text-align: center;
+  padding: 30px;
 }
 
 input {
@@ -25,15 +29,12 @@ input[type="submit"] {
   	color: white;
 }
 
-* {
-	font-family: 'Courier', serif;
-}
-
 h1 {
 	font-size: 40px;
 	text-align: center;
 	color: black;
 	margin: 0 auto;
+  padding: 30px;
 }
 
 p {

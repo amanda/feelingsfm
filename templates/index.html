@@ -6,19 +6,18 @@
 </head>
 <body>
 	<div class="center">
-	<div id="content">
-		<h1>play yr feelings</h1>
-		<form role="form" action="/player" method="post">
-	      <textarea id="feels" name="feels" rows="8"></textarea>
-	    <button type="submit">go</button>
-      	</form>
-	</div>
-	<div id="player">
-	{% if songids %}
-	<p>yr feels</p><br />
-		<iframe src="https://embed.spotify.com/?uri=spotify:trackset:yrfeels:{{songids}}" frameborder="0" allowtransparency="true"></iframe>
-	{% endif %}
-	</div>
+		<div id="content">
+			<h1>play yr feelings</h1>
+			<form role="form" action="/" method="post">
+		    <textarea id="feels" name="feels" rows="8"></textarea><br />
+		    <button type="submit">go</button>
+	    </form>
+		</div>
+		<div id="player">
+		{% if songids %}
+			<iframe src="https://embed.spotify.com/?uri=spotify:trackset:yrfeels:{{songids}}" frameborder="0" allowtransparency="true"></iframe>
+		{% endif %}
+		</div>
 	</div>
 </body>
 </html>
