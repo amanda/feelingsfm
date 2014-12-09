@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>testing</title>
+</head>
+<body>
+	<div id="content">
+		<form role="form" action="/player" method="post">
+	      <textarea id="feels" name="feels" rows="8"></textarea>
+	    <button type="submit">Submit</button>
+      	</form>
+	</div>
+	<div id="player">
+	{% if songids %}
+	<p>yr feels</p><br />
+		<iframe src="https://embed.spotify.com/?uri=spotify:trackset:yrfeels:{{songids}}" frameborder="0" allowtransparency="true"></iframe>
+	{% endif %}
+	</div>
+</body>
+</html>
