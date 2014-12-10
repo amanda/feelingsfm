@@ -68,4 +68,5 @@ def index():
   		return render_template('index.html', songids=user_songs)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    #app.run(debug=True)
+    app.run()
