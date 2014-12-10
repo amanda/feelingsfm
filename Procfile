@@ -1,1 +1,1 @@
-worker: python playlist.py
+web: python playlist.py
