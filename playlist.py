@@ -64,8 +64,8 @@ def index():
 		return render_template('index.html')
 	elif request.method == 'POST': #what to do on refresh...
 		user_feels = request.form['feels']
- 		user_songs = ','.join(get_song_ids(user_feels))
- 		return render_template('index.html', songids=user_songs) 
+  		user_songs = ','.join(get_song_ids(user_feels))
+  		return render_template('index.html', songids=user_songs)
 
 if __name__ == '__main__':
     app.run(debug=True)

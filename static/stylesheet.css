@@ -6,27 +6,32 @@ body {
 	text-align: center;
 }
 
-#content {
-  margin: 30px;
+.center {
+     margin: 0 auto;
+     width: 500px; 
+     padding: 30px 0 30px 0;
 }
 
-#form {
-	margin: 30px;
+#container {
+  background-color: purple;
+  margin-top: 30px;
 }
 
-#player {
+form {
   padding: 30px;
 }
 
-input {
-  	border: 0;
-  	padding: 10px;
-  	font-size: 18px;
+textarea {
+  	border: 3;
+    padding: 5px;
+    margin: 20px;
+  	font-size: 12px;
 }
 
-input[type="submit"] {
-  	background: red;
+button {
+  	background: green;
   	color: white;
+    padding: 5px;
 }
 
 h1 {
@@ -34,28 +39,11 @@ h1 {
 	text-align: center;
 	color: black;
 	margin: 0 auto;
-  padding: 30px;
-}
-
-p {
-	color: black;
-	margin: 0 auto;
-}
-
-a {
-	color: red;
-	text-decoration: none;
 }
 
 div {
 	margin: 0 auto;
 	text-align: center;
-}
-
-.center {
-     margin: 0 auto;
-     width: 500px; 
-     padding: 30px 0 30px 0;
 }
 
 @media (max-width: 500px) {
