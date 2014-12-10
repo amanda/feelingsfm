@@ -1,13 +1,13 @@
 from flask import Flask, render_template, request
 import requests
 from textblob import TextBlob
-import settings
+import os
 import random
 import json
 
 app = Flask(__name__)
 
-API_KEY = settings.API_KEY
+API_KEY = os.getenv('ECHONEST_API_KEY')
 GENRE_JSON = 'list_genres.json'
 
 def genres_to_feels():

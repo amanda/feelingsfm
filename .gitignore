@@ -55,3 +55,6 @@ target/
 
 # Settings
 settings.py
+
+# venv
+venv/
