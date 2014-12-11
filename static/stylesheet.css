@@ -46,6 +46,22 @@ div {
 	text-align: center;
 }
 
+#footer {
+  font-size: 10px;
+}
+
+p {
+  color: rgb(227,228,225);
+}
+
+a:link {
+  color: rgb(227,228,225);
+}
+
+a:visited {
+  color: rgb(227,228,225);
+}
+
 @media (max-width: 500px) {
       h1 {
         font-size: 36px;

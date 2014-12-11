@@ -62,12 +62,12 @@ def get_song_ids(feels_words):
 def index():
 	if request.method == 'GET':
 		return render_template('index.html')
-	elif request.method == 'POST': #what to do on refresh...
+	elif request.method == 'POST':
 		user_feels = request.form['feels']
   		user_songs = ','.join(get_song_ids(user_feels))
   		return render_template('index.html', songids=user_songs)
 
 if __name__ == '__main__':
-    #app.run(debug=True)
-    port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port)
+    app.run(debug=True)
+    # port = int(os.environ.get('PORT', 5000))
+    # app.run(host='0.0.0.0', port=port)
